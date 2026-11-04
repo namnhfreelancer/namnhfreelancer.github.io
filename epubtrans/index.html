@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bilingual Book Generator has moved</title>
+  <link rel="canonical" href="https://bilingual-book-generator.pages.dev/">
+  <style>
+    body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1.25rem; color: #1c1917; background: #f4faf6; }
+    a.button { display: inline-block; margin: 0.5rem 0 1.5rem; padding: 0.7rem 1.2rem; border-radius: 0.8rem; background: #059669; color: #fff; text-decoration: none; font-weight: 600; }
+    p.note { font-size: 0.9rem; color: #57534e; }
+    @media (prefers-color-scheme: dark) { body { color: #e7e5e4; background: #0c0a09; } p.note { color: #a8a29e; } }
+  </style>
+</head>
+<body>
+  <h1>Ứng dụng đã chuyển địa chỉ</h1>
+  <p>epubtrans giờ là <strong>Bilingual Book Generator</strong>, tại địa chỉ mới:</p>
+  <a class="button" href="https://bilingual-book-generator.pages.dev/">bilingual-book-generator.pages.dev</a>
+  <p class="note">Sách và bản dịch lưu trong trình duyệt ở địa chỉ cũ không tự chuyển sang. Nếu bạn còn tệp sách gốc, hãy tải lại ở địa chỉ mới; tệp dự án .bbg đã tải trước đây cũng mở được ở đó.</p>
+  <hr>
+  <h2 lang="en">The app has moved</h2>
+  <p lang="en">epubtrans is now <strong>Bilingual Book Generator</strong>: <a href="https://bilingual-book-generator.pages.dev/">bilingual-book-generator.pages.dev</a>.</p>
+  <p class="note" lang="en">Books and translations stored in your browser at the old address do not move with it. Open your original book files there again; .bbg project files you downloaded earlier open there too.</p>
+  <script>
+    // Removes the old app's service worker in browsers where it is still registered but no longer updates.
+    navigator.serviceWorker?.getRegistrations().then((list) => list.forEach((r) => r.unregister()));
+  </script>
+</body>
+</html>
